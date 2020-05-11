@@ -185,7 +185,7 @@ class GameIntegration{
 	Options Methaphysics = new Options("Methaphysics", 300, 100, 120, 100);
 	ButtonGroup PhGroup = new ButtonGroup();
 	//SPORTS QUESTION
-	Question PhQuestion = new Question("Epistemology is the theory of…", 160 , 5, 400, 50 );
+	Question PhQuestion = new Question("Epistemology is the theory ofâ€¦", 160 , 5, 400, 50 );
 	
 	
 	//LITERATURE PANEL
@@ -438,7 +438,7 @@ class GameIntegration{
 		}
 			
 			
-		//THIS METHOD WORKS. MAKE AN EQUIVALENT BUT FOR BUTTON GROUP
+		//THIS METHOD ADDS JCHECKBOXES TO JPANELS
 		public static void AddBoxes(JPanel pan, ButtonGroup group, JCheckBox box1, JCheckBox box2, JCheckBox box3, JCheckBox box4) {
 			pan.add(box1);
 			pan.add(box2);
@@ -450,7 +450,7 @@ class GameIntegration{
 			group.add(box4);
 		}
 		
-		
+		//THIS METHOD ADDS ACTIONLISTENERS TO EACH JCHECKBOX ON A PANEL AND ADD THE 'OK' BUTTON AFTER ONE OF THEM IS SELECTED
 		public static void BoxSelected(JButton ok, JPanel pan,JCheckBox box1, JCheckBox box2, JCheckBox box3, JCheckBox box4) {
 			JCheckBox[] Boxes =  new JCheckBox[4];
 			Boxes [0] = box1;
